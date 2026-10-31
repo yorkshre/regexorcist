@@ -4,6 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "regexorcist"
+authors=[{name= "Agata Skamruk"}]
 version = "0.1.0"
 description = "Regular expressions, but with an exorcist."
 readme = "README.md"
