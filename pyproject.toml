@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "regexorcist"
+version = "0.1.0"
+description = "Regular expressions, but with an exorcist."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["regex", "regular-expressions", "text-processing", "humor"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/regexorcist"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
